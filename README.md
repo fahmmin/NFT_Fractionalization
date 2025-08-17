@@ -97,8 +97,7 @@ The goal is to make high-value, unique assets **accessible and programmable**:
 
 ## 📦 Contract Details
 
-Deployed contract address: `ST…/STX…` **(replace with your deployment)**
-Example (testnet style): `STXXXX...YYYY.nft-fractionalizer`
+Deployed contract address: STGZ43RPQ8MRR7ZQ7NNH09K3BZ9NY7B66MYFWKJ3.nft-fractionalizer
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4009809d-f702-4687-b0d4-9b00e2de07fe" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0000aa4e-cca3-4ad2-a289-b23e5131cf91" />

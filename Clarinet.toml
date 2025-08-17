@@ -3,8 +3,8 @@
 
 [project]
 name = "nft-fractionalizer"                    ;; Project name (like project name in package.json)
-authors = ["Erfan Yeganegi <yeganegierfan@gmail.com>"]  ;; Contract author
-description = "DROPLinked NFT Fractionalizer"   ;; Project description
+authors = ["Fahmin Mohammed <fahmin@droplinked.com>"]  ;; Contract author
+description = "Digital Will NFT Fractionalizer"   ;; Project description
 requirements = []                                ;; External contract dependencies (like imports in Solidity)
 boot_contracts = ["pox", "costs-v2", "bns"]     ;; System contracts that must be deployed first
 ;; These are like the Ethereum system contracts (e.g., WETH, Uniswap V2 Factory)

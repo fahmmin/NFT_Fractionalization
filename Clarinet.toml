@@ -1,0 +1,40 @@
+;; Clarinet.toml - Project configuration file (similar to hardhat.config.js or truffle-config.js)
+;; This file defines how to build, test, and deploy your Stacks smart contracts
+
+[project]
+name = "nft-fractionalizer"                    ;; Project name (like project name in package.json)
+authors = ["Erfan Yeganegi <yeganegierfan@gmail.com>"]  ;; Contract author
+description = "DROPLinked NFT Fractionalizer"   ;; Project description
+requirements = []                                ;; External contract dependencies (like imports in Solidity)
+boot_contracts = ["pox", "costs-v2", "bns"]     ;; System contracts that must be deployed first
+;; These are like the Ethereum system contracts (e.g., WETH, Uniswap V2 Factory)
+
+;; Contract definitions - maps contract names to their file paths
+;; Similar to how you import contracts in Solidity
+[contracts.sft-trait]
+path = "contracts/traits/sft-trait.clar"        ;; SFT trait interface
+
+[contracts.ft-trait]
+path = "contracts/traits/ft-trait.clar"         ;; Fungible token trait interface
+
+[contracts.nft-trait]
+path = "contracts/traits/nft-trait.clar"        ;; NFT trait interface
+
+[contracts.nft-fractionalizer]
+path = "contracts/nft-fractionalizer.clar"      ;; Main contract implementation
+
+;; REPL (Read-Eval-Print Loop) configuration - for testing contracts interactively
+;; Similar to hardhat console or truffle console
+[repl]
+costs_version = 2                               ;; Stacks cost model version
+parser_version = 2                              ;; Clarity parser version
+
+;; Analysis configuration for the REPL
+[repl.analysis]
+passes = ["check_checker"]                      ;; Static analysis passes
+
+[repl.analysis.check_checker]
+strict = false                                  ;; Don't be strict about warnings
+trusted_sender = true                           ;; Trust the transaction sender
+trusted_caller = true                           ;; Trust the calling contract
+callee_filter = true                            ;; Filter function calls for security

@@ -1,0 +1,39 @@
+---
+id: 0
+name: Testnet deployment
+network: testnet
+stacks-node: "https://api.testnet.hiro.so"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoind.testnet.stacks.co:18332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: ft-trait
+            expected-sender: STGZ43RPQ8MRR7ZQ7NNH09K3BZ9NY7B66MYFWKJ3
+            cost: 4320
+            path: contracts/traits/ft-trait.clar
+            anchor-block-only: true
+            clarity-version: 1
+        - contract-publish:
+            contract-name: nft-trait
+            expected-sender: STGZ43RPQ8MRR7ZQ7NNH09K3BZ9NY7B66MYFWKJ3
+            cost: 2780
+            path: contracts/traits/nft-trait.clar
+            anchor-block-only: true
+            clarity-version: 1
+        - contract-publish:
+            contract-name: sft-trait
+            expected-sender: STGZ43RPQ8MRR7ZQ7NNH09K3BZ9NY7B66MYFWKJ3
+            cost: 5020
+            path: contracts/traits/sft-trait.clar
+            anchor-block-only: true
+            clarity-version: 1
+        - contract-publish:
+            contract-name: nft-fractionalizer
+            expected-sender: STGZ43RPQ8MRR7ZQ7NNH09K3BZ9NY7B66MYFWKJ3
+            cost: 44720
+            path: contracts/nft-fractionalizer.clar
+            anchor-block-only: true
+            clarity-version: 1
+      epoch: "2.05"

@@ -1,4 +1,5 @@
-# 🧩 NFT Fractionalization Vault (Stacks)
+# 🧩 NFT Fractionalization Vault (Stacks) / Open Governence +DigiWill Transfer
+
 
 ## 📜 Project Description
 
